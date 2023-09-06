@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Algoritmizace</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="algoritmizace">Algoritmizace</h1>
+<ul>
+<li><strong>algoritmus</strong>
+<ul>
+<li>je posloupnost instrukcí, která obvykle vede k řešení nějakého
+problému či provedení výpočtu na základě vstupních dat</li>
+<li>tyto instrukce jsou vykonávány počítačem, v historii to před
+počítačema byly ženy</li>
+</ul></li>
+<li><strong>algoritmizace</strong>
+<ul>
+<li>je proces nalezení algoritmu na daný problém</li>
+<li>příklady
+<ul>
+<li>algoritmus dělení dvou přirozených čísel</li>
+<li>algoritmus nalezení kořenů kvadratického polynomu</li>
+<li>algoritmus stupňování matice</li>
+<li>algoritmus násobení vektorů</li>
+<li>Eukleidův algoritmus</li>
+</ul></li>
+</ul></li>
+<li><strong>výpočet</strong>
+<ul>
+<li>realizace algoritmu s konkrétními vstupními daty</li>
+<li>třeba eukleidův algoritmus pro čísla 152,28</li>
+</ul></li>
+<li><strong>popis</strong> algoritmu (eukleidův algoritmus)
+<ul>
+<li>slovní
+<ul>
+<li>Mějme dvě přirozená čísla x,y. Je-li jedno z těchto čísel rovno
+nule, pak je nejmenší společný dělitel roven číslu druhému.</li>
+<li>Řekněme, že x&gt;y. (kdyby to bylo opačně, jen přeznačíme). Označme
+r zbytek po dělení x/y.</li>
+<li>Nejmenší společný dělitel čísel x,y je roven nejmenšímu společnému
+děliteli čísel y,r. Hledáme tedy nejmenšího spol. dělitele y,r a
+opakujeme celý algoritmus</li>
+</ul></li>
+<li>grafický - vývojový diagram
+<ul>
+<img src="euclid.png" alt="eukleiduv algoritmus vyvojovy diagram">
+</ul></li>
+<li>matematický
+<ul>
+<img src="euclid-math.png" alt="eukleiduv algoritmus matematicky">
+</ul></li>
+<li>programem</li>
+</ul>
+<pre><code>      NSD(x,y):
+          if x==0 {return y}
+          else if y==0 {return x}
+          else if x&gt;=y {let r = x mod y, return NSD(y,r)}
+          else {let r = y mod x, return NSD(x,r)}</code></pre></li>
+<li><strong>vlastnosti</strong>
+<ul>
+<li>každý algoritmus je nějak efektivní (či neefektivní) ale ne každý
+algoritmus je korektní, konečný, obecný či deterministický. Dalo by se
+tvrdit že každý dobrý algoritmus má všechny tyhle vlastnosti, ale hlavně
+u determinismu to neni obecně pravda, nedeterministický algoritmy se
+občas používaj (detail)</li>
+<li><em>efektivita</em>
+<ul>
+<li>časová
+<ul>
+<li>jedná se o funkci která popisuje závislost počtu kroků programu na
+velikosti vstupních dat (to se projeví na délce běhu)</li>
+<li>lineární časová efektivita tedy znamená, že pro 2 vstupní data bude
+mít algoritmus <code>a·2</code> kroků pro nějaké <code>a&gt;0</code>,
+třeba <code>5,9</code></li>
+<li>kvadratická časová efektivita je to samý, ale ta funkce bude mít
+tvar <code>a·x^2</code> kde <code>x</code> je velikost vstupních
+dat</li>
+<li>obecně to může bejt jakákoliv funkce kterou si vymyslíš</li>
+</ul></li>
+<li>paměťová
+<ul>
+<li>to samý jako u časový, zase je to nějaká funce, která popisuje
+závislost využité paměti za běhu programu na velikosti vstupních
+dat</li>
+<li>zase to může bejt jakákoliv funkce</li>
+</ul></li>
+</ul></li>
+<li><em>korektnost</em> - pro správná vstupní data vrátí algoritmus
+správná</li>
+<li><em>konečnost</em> - algoritmus vrátí výsledek po konečném počtu
+kroků</li>
+<li><em>obecnost</em> - algoritmus lze použít na různá vstupní data
+(třeba všechny reálný čísla) a ne jen dvě konkrétní třeba</li>
+<li><em>determinismus</em> - algoritmus je deterministický jestliže pro
+stejná data vrátí vždy stejný výsledek (nedeterministický algoritmus by
+zahrnoval náhodná čísla např.)</li>
+</ul></li>
+</ul>
+</body>
+</html>
