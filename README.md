@@ -1,1 +1,1 @@
-# algo-poznamky
+# Algoritmizace - poznamky
